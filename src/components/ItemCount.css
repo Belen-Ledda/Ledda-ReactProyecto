@@ -1,0 +1,21 @@
+.container-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.Container-espacio { 
+    display: flex;
+    flex-direction:row;
+}
+
+.Container-espacio p {
+    margin:20px;
+
+}
+
+
+
+
+
