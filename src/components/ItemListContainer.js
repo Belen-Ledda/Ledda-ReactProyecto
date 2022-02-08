@@ -1,7 +1,7 @@
 import './ItemListContainer.css';
 
 import ItemCount from './ItemCount';
-import { useEffects, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getProducts } from '../api/api';
 import ItemList from './ItemList';
 
@@ -10,7 +10,7 @@ export default function ItemListContainer ({ greetings }) {
 
     
     //cuando se monta el componente , busca los productos.
-    useEffects(() => {
+    useEffect(() => {
 
 
     //obtener los productos
