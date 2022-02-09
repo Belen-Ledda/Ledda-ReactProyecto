@@ -1,0 +1,31 @@
+.item-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item-container img {
+    width: 30%;
+    padding: 1rem;
+}
+
+.detalle-container {
+    color:white;
+    border-top: 1px solid black;
+    padding: 1rem 0;
+    border-radius: 0 0 5px 5px;
+    @apply bg-gradient-to-r from-gray-700 via-gray-900 to-black;
+    
+}
+
+.detalle-container .item-price {
+    font-weight: bold;
+    
+}
+.detalle-container .item-title {
+
+    font-size: 1.25rem;
+    color: rgb(156 163 175 / var(--tw-text-opacity))
+    
+
+}

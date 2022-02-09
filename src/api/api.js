@@ -4,7 +4,7 @@ const products = [
         title: 'Remera inteligente',
         description: 'Alivia dolores de espalda y estas canchero a la vez ',
         price: '1200',
-        pictureUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infobae.com%2Famerica%2Ftecno%2F2020%2F01%2F21%2Fcomo-es-la-camiseta-inteligente-para-aliviar-los-dolores-de-espalda%2F&psig=AOvVaw3lw-HIqaxpkd_14tIkJigS&ust=1644368040954000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDHwbny7vUCFQAAAAAdAAAAABAO',
+        pictureUrl: 'https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/BZITP7BCEVATHCXBMB27GMZVLE.jpg',
     },
     { 
         id: 2, 

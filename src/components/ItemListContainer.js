@@ -2,8 +2,8 @@ import './ItemListContainer.css';
 
 import ItemCount from './ItemCount';
 import { useEffect, useState } from 'react';
-import { getProducts } from '../api/api';
 import ItemList from './ItemList';
+import { getProducts } from '../api/api';
 
 export default function ItemListContainer ({ greetings }) {
     const [products,setProducts] = useState([]);
