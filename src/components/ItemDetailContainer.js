@@ -1,25 +1,33 @@
 import './ItemDetailContainer.css';
-import { useEffect} from 'react';
-import { getItem} from '../api/api';
+import { useState, useEffect} from 'react';
+import { getProducts } from '../api/api';
 import ItemDetail from './ItemDetail';
+import { useParams } from 'react-router-dom';
+
 
 
 export default function ItemDetailContainer() {
+
+  const [product, setProduct] = useState();
+  const { productId } = useParams();
     
     
         useEffect(() => {
-      getItems().then((items) => {
-        const products = items.find((i) => i.id === Number(productId));
+
+      getProducts().then((items) => {
+        const productId = items.find((i) => i.id === Number(productId));
         setProduct( product);
-      })
-      })
+      }) 
   
     },[productId]);
+
+    
   
     return (
       <div className='item-detalle'>
-        {!item ? <p>Cargando...</p> :  <ItemDetail item={item} />}
+        {!product ? <p>Cargando...</p> :  <ItemDetail product={product} />}
       </div>
-    )
-  }
- 
+    );
+  
+
+}

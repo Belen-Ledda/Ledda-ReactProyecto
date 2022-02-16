@@ -1,7 +1,7 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 import './NavBar.css';
-
+import { NavLink } from 'react-router-dom';
 
 
 export default function NavBar()  {
@@ -45,22 +45,20 @@ export default function NavBar()  {
 <div class={`justify-between items-center w-full md:flex md:w-auto md:order-1 ${menuOpen ? 'hidden':''}`} id="mobile-menu-2">
 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
 <li>
-<a href="#" class=" nav-link block py-2 pr-4 pl-3 text-white brounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
+<NavLink to="/catory/home" class=" nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Home</NavLink>
 </li>
 <li>
-<a href="#" class="nav-link">Ropa</a>
+<NavLink to="/catory/accesorios" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Accesorio</NavLink>
 </li>
 <li>
-<a href="#" class="nav-link">Calzado</a>
+<NavLink to="/catory/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink>
 </li>
 <li>
-<a href="#" class="nav-link">Accesorios</a>
+<NavLink to="/catory/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink>
 </li>
 <li>
-<a href="#" class="nav-link">Contact</a>
+<NavLink to="/catory/cartWidget" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page"><CartWidget/></NavLink>
 </li>
-<CartWidget/>
-
 </ul>
 </div>
 

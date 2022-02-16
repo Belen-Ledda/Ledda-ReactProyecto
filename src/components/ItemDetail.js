@@ -1,6 +1,7 @@
 
 import './ItemDetail.css';
 
+
 export default function ItemDetail({ products }) {
   return (
     <div className='item-detail'>
