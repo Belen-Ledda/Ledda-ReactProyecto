@@ -18,11 +18,11 @@ export default function ItemListContainer ({ greetings }) {
     //cuando se monta el componente , busca los productos.
     useEffect(() => {
  //obtener los productos
-getProducts().then((products) => {
+getProducts().then((res) => {
             if (!categoryName) {
-                setProducts(products);
+                setProducts(res);
             } else {
-            const itemsPorCategoria = products.filter((producto) => {
+            const itemsPorCategoria = res.filter((producto) => {
                 return producto.category === categoryName;
 
             });
@@ -43,11 +43,11 @@ getProducts().then((products) => {
     <div>
         <h1>{greetings}</h1>
 
-        {
-            products.length > 0 ?
-            <p>Cargando...</p> :
-            <ItemList products={products}/> 
-        }
+        {products.length === 0 ? (
+        <p>Cargando...</p>
+        ) : (
+        <ItemList products={products} />
+        )}
         <ItemCount stock={5} initial={1} onAdd={onAddItem} />
     </div>
 

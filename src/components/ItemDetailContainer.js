@@ -15,8 +15,8 @@ export default function ItemDetailContainer() {
         useEffect(() => {
 
       getProducts().then((products) => {
-        const productId = products.find((i) => i.id === Number(productId));
-        setProduct( product);
+        const findProduct = products.find((i) => i.id === Number(productId));
+        setProduct( findProduct);
       }) 
   
     },[productId]);
