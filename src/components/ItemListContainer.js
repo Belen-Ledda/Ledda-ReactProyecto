@@ -18,7 +18,7 @@ export default function ItemListContainer ({ greetings }) {
     //cuando se monta el componente , busca los productos.
     useEffect(() => {
  //obtener los productos
- getProducts().then((products) => {
+getProducts().then((products) => {
             if (!categoryName) {
                 setProducts(products);
             } else {
@@ -27,7 +27,7 @@ export default function ItemListContainer ({ greetings }) {
 
             });
             setProducts(itemsPorCategoria);
-}
+                }
 
 
 }, [ categoryName ]);
@@ -49,5 +49,6 @@ export default function ItemListContainer ({ greetings }) {
         }
         <ItemCount stock={5} initial={1} onAdd={onAddItem} />
     </div>
-    )
-}
+
+    );   
+    }

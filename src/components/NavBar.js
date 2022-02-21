@@ -45,19 +45,19 @@ export default function NavBar()  {
 <div class={`justify-between items-center w-full md:flex md:w-auto md:order-1 ${menuOpen ? 'hidden':''}`} id="mobile-menu-2">
 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
 <li>
-<NavLink to="/catory/home" class=" nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Home</NavLink>
+<NavLink to="/category/home" class=" nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Home</NavLink>
 </li>
 <li>
-<NavLink to="/catory/accesorios" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Accesorio</NavLink>
+<NavLink to="/category/accesorios" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Accesorio</NavLink>
 </li>
 <li>
-<NavLink to="/catory/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink>
+<NavLink to="/category/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink>
 </li>
 <li>
-<NavLink to="/catory/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink>
+<NavLink to="/category/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink>
 </li>
 <li>
-<NavLink to="/catory/cartWidget" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page"><CartWidget/></NavLink>
+<NavLink to="/category/cartWidget" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page"><CartWidget/></NavLink>
 </li>
 </ul>
 </div>

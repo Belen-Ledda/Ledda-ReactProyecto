@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
   return (
-  
+  <>
     {/*el navbar va a quedar fijo */}
         <div className="App">
           <NavBar />
@@ -42,7 +42,7 @@ function App() {
 
           </routes>
         </div>
- 
+</>
   );
 }
 
