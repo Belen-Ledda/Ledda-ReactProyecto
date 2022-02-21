@@ -23,16 +23,17 @@ getProducts().then((products) => {
                 setProducts(products);
             } else {
             const itemsPorCategoria = products.filter((producto) => {
-                return Producto.category === categoryName;
+                return producto.category === categoryName;
 
             });
             setProducts(itemsPorCategoria);
                 }
+            });
+            
 
-
-}, [ categoryName ]);
+    }, [ categoryName ]);
     //array de depen.
-    
+
     
 
     function onAddItem(itemCount) {
@@ -52,3 +53,5 @@ getProducts().then((products) => {
 
     );   
     }
+
+

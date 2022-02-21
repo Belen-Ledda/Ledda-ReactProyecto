@@ -51,10 +51,10 @@ export default function NavBar()  {
 <NavLink to="/category/accesorios" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Accesorio</NavLink>
 </li>
 <li>
-<NavLink to="/category/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink>
+<NavLink to="/categoryName/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink>
 </li>
 <li>
-<NavLink to="/category/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink>
+<NavLink to="/categoryName/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink>
 </li>
 <li>
 <NavLink to="/category/cartWidget" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page"><CartWidget/></NavLink>

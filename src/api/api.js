@@ -21,7 +21,7 @@ const products = [
         description: 'Sos de los que se le cae siempre el cafe y esta todo sucio por la vida , es tu solucion! ',
         price: '1000',
         pictureUrl: 'https://img.menzig.style/a/0000/352-h0.jpg',
-        category:'calzado,'
+        category:'calzado',
     },
 ];
 
