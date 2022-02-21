@@ -23,15 +23,15 @@ const products = [
         pictureUrl: 'https://img.menzig.style/a/0000/352-h0.jpg',
         category:'calzado',
     },
-];
+]
 
 
 
 
 
 
-const promesa = new Promise (function (resolve, reject) {
-    setTimeout(function () {
+const promesa = new Promise ((resolve, reject) => {
+    setTimeout(() => {
         resolve(products);
 }, 500)
 });
