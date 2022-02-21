@@ -16,24 +16,7 @@ export default function NavBar()  {
             <div class="flex items-center md:order-2">
 
                   <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown">
-                      <div class="py-3 px-4">
-                          <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
-                          <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
-                      </div>
-                      <ul class="py-1" aria-labelledby="dropdown">
-                          <li>
-                          <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
-                          </li>
-                          <li>
-                          <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
-                          </li>
-                          <li>
-                          <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
-                          </li>
-                          <li>
-                          <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                          </li>
-                      </ul>
+                      
                   </div>
                   <button onClick={() =>{setMenuOpen(!menuOpen)}} data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
 
@@ -50,7 +33,7 @@ export default function NavBar()  {
                     <li><NavLink to="/category/accesorios" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Accesorio</NavLink></li>
                     
                     <li><NavLink to="/category/ropa" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Ropa</NavLink></li>
-                    
+
                     <li><NavLink to="/category/calzado" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page">Calzado</NavLink></li>
                     
                     <li><NavLink to="/category/cartWidget" class="nav-link block py-2 pr-4 pl-3 text-black brounded md:bg-transparent  md:p-0" aria-current="page"><CartWidget/></NavLink></li>

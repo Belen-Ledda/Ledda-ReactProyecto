@@ -18,17 +18,17 @@ function App() {
         <Routes>
           <Route 
             path="/" 
-            elements={<ItemListContainer greeting= "Bienvenides a la tienda"/>}
+            element={<ItemListContainer greeting= "Bienvenides a la tienda"/>}
             />
             <Route
               path="/category/:categoryName"
-              elements={<ItemListContainer greeting= "Category selections"/>}
+              element={<ItemListContainer greeting= "Category selections"/>}
             />
 
             
             <Route
               path="/producto/:productId" 
-              elements={<ItemDetailContainer />}
+              element={<ItemDetailContainer />}
             />
             <Route
               path="*"
