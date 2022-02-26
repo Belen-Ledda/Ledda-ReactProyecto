@@ -5,9 +5,14 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 
+import { CartContext } from './Context/CartContext';
+import CartContextProvider from './Context/CartContext';
+
+
 function App() {
   return (
   <>
+    <CartContextProvider>
     {/*el navbar va a quedar fijo */}
         <div className="App">
           <NavBar />
@@ -18,11 +23,11 @@ function App() {
         <Routes>
           <Route 
             path="/" 
-            element={<ItemListContainer greeting= "Bienvenides a la tienda"/>}
+            element={<ItemListContainer greetings= "Bienvenides a la tienda"/>}
             />
             <Route
               path="/category/:categoryName"
-              element={<ItemListContainer greeting= "Category selections"/>}
+              element={<ItemListContainer greetings= "Category selections"/>}
             />
 
             
@@ -42,6 +47,7 @@ function App() {
 
           </Routes>
         </div>
+    </CartContextProvider>
 </>
   );
 }

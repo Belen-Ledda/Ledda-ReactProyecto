@@ -48,7 +48,7 @@ getProducts().then((res) => {
         ) : (
         <ItemList products={products} />
         )}
-        <ItemCount stock={5} initial={1} onAdd={onAddItem} />
+        
     </div>
 
     );   
