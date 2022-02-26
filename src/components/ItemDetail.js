@@ -7,13 +7,15 @@ import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
 
 export default function ItemDetail({ product }) {
-  const [showButton, setShowButton] = useState(false);
+  const [itemCountCheckout, setItemCountCheckout] = useState(false);
 
-  const onAdd = (cantidad)=> {
-    setShowButton(true);
+  function onAddItem(newItemCount){
+    setItemCountCheckout(newItemCount);
 
-  };
-return (
+  }
+
+
+  return (
     <div className='item-detail'>
        <img src={product.pictureUrl} alt="Imagen del producto" />
       <div className='right-column'>
@@ -23,21 +25,16 @@ return (
           <p className='description'>{product.description}</p>
         </div>
 
-        { showButton ? (
-
+        {
+          !itemCountCheckout ?
+          <ItemCount stock={5} initial={1} onAdd={onAddItem} /> :
           <Link to ="/cart"> IR AL CARRITO</Link>
-        ):(
-          <ItemCount stock={products.stock} initial={o} onAdd={onAdd} /> 
-         
 
 
-        )}
+        }
 
       </div>
     </div>
   );
 };
-
-
-
 

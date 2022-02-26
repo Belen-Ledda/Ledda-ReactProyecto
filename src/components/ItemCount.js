@@ -10,7 +10,7 @@ import './ItemCount.css';
 
 
 export default function ItemCount({ stock, initial , onAdd }) {
-    const [itemCounter, setItemCounter] = useState(1);
+    const [itemCounter, setItemCounter] = useState(initial);
 
 
     function sumar() {
