@@ -3,7 +3,7 @@ import { Link } from ' react-router-dom';
 import {CartContext} fom '../Context/CartContext';
 
 const Cart = () => {
-    const { cart, vaciarCarrito } = useContext(CartContext);
+    const { cart, vaciarCarrito, deleteItem } = useContext(CartContext);
     
     return (
         //react.fragment
@@ -18,9 +18,9 @@ const Cart = () => {
             <>
             {cart.map ((producto)=>)
                 <div key={producto.id}>
-                    <h3> {producto.name}</h3>
+                    <h3> {producto.title}</h3>
                     <h3> {producto.cantidad}</h3>
-                    <button>X</button>
+                    <button onClick= {() => deleteItem(producto.id)}>X</button>
                 </div>
             })}
             <button onClick={vaciarCarrito}>Vaciar Carrito </button>

@@ -39,12 +39,17 @@ const CartContextProvider = ({ children}) => {
     };
 
     //eliminar por item
+    const deleteItem =(id) =>{
+      setCart(cart.filter((producto)=> producto.id !== id))
+    };
+
+
     //sumar total deel carrito (precio * cantidad)
 
     //sumar cant de unidades del carrito
 
     return (
-        <CartContext.provider value= {{ cart, addToCart, vaciarCarrito }}>
+        <CartContext.provider value= {{ cart, addToCart, vaciarCarrito, deleteItem }}>
             {children}
         </CartContext.provider>
     );
